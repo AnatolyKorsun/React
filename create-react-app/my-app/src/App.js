@@ -192,9 +192,25 @@
 //   };
 
 
+
+// import React, { Component } from 'react'
+// import Api from './Api'
+// class App extends Component {
+//     render() {
+//         return(
+//             <div className ="conteiner">
+//                 <Api />
+//             </div>
+//         )
+//     }
+// }
+// export default App
+
+
 import React, { Component } from 'react';
 import Table from './Table';
 import Form from './Form';
+import Api from './Api'
 class App extends Component {
     state = {
         characters: [  {
@@ -237,8 +253,13 @@ class App extends Component {
                 />
                 <h3>Add New</h3>
                 <Form handleSubmit={this.handleSubmit} />
+                <Api />
             </div>
         );
     }
 }
 export default App;
+
+
+
+
