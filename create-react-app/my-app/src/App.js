@@ -211,6 +211,7 @@ import React, { Component } from 'react';
 import Table from './Table';
 import Form from './Form';
 import Api from './Api'
+import Time from './Time'
 class App extends Component {
     state = {
         characters: [  {
@@ -254,6 +255,7 @@ class App extends Component {
                 <h3>Add New</h3>
                 <Form handleSubmit={this.handleSubmit} />
                 <Api />
+                <Time />
             </div>
         );
     }
