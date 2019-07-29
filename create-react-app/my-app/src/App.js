@@ -209,6 +209,7 @@ import Table from "./Table";
 import Form from "./Form";
 import Api from "./Api";
 import Comment from './Comment'
+import Clock from './Time'
 
 class App extends Component {
   state = {
@@ -257,6 +258,7 @@ class App extends Component {
         <Form handleSubmit={this.handleSubmit} />
         <Api />
         <Comment />
+        <Clock />
       </div>
     );
   }
