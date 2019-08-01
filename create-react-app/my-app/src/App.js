@@ -211,6 +211,8 @@ import Api from "./Api";
 import Comment from './Comment'
 import Clock from './Time'
 import Posts from "./Posts";
+import ToggleButton from './ToggleButton'
+import LoginControl from './LoginControl'
 
 class App extends Component {
   state = {
@@ -261,6 +263,8 @@ class App extends Component {
         <Comment />
         <Clock />
         <Posts />
+        <ToggleButton />
+        <LoginControl />
       </div>
     );
   }
