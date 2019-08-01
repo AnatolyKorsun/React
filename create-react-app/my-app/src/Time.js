@@ -5,7 +5,6 @@ class Clock extends Component {
       this.state = {date: new Date()};
     }
     componentDidMount() {
-      console.log(this)
       this.timerID = setInterval(
         () => this.tick(),
         1000

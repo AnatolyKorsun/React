@@ -210,6 +210,7 @@ import Form from "./Form";
 import Api from "./Api";
 import Comment from './Comment'
 import Clock from './Time'
+import Posts from "./Posts";
 
 class App extends Component {
   state = {
@@ -259,6 +260,7 @@ class App extends Component {
         <Api />
         <Comment />
         <Clock />
+        <Posts />
       </div>
     );
   }
