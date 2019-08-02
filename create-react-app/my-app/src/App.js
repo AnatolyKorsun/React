@@ -208,11 +208,12 @@ import React, { Component } from "react";
 import Table from "./Table";
 import Form from "./Form";
 import Api from "./Api";
-import Comment from './Comment'
-import Clock from './Time'
+import Comment from "./Comment";
+import Clock from "./Time";
 import Posts from "./Posts";
-import ToggleButton from './ToggleButton'
-import LoginControl from './LoginControl'
+import ToggleButton from "./ToggleButton";
+import LoginControl from "./LoginControl";
+import Banner from "./Banner";
 
 class App extends Component {
   state = {
@@ -234,7 +235,7 @@ class App extends Component {
         job: "Bartender"
       }
     ]
-    };
+  };
   removeCharacter = index => {
     const { characters } = this.state;
     this.setState({
@@ -265,6 +266,7 @@ class App extends Component {
         <Posts />
         <ToggleButton />
         <LoginControl />
+        <Banner />
       </div>
     );
   }
