@@ -10,7 +10,7 @@ function WarningBanner(props) {
 class Banner extends Component {
   constructor(props) {
     super(props);
-    this.state = { showWarning: true };
+    this.state = { showWarning: false };
     this.handleToggleClick = this.handleToggleClick.bind(this);
   }
   handleToggleClick() {

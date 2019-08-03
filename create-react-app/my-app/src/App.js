@@ -215,6 +215,7 @@ import ToggleButton from "./ToggleButton";
 import LoginControl from "./LoginControl";
 import Banner from './Banner';
 import List from './List';
+import NameForm from './NameForm'
 
 
 
@@ -271,6 +272,8 @@ class App extends Component {
         <LoginControl />
         <Banner />
         <List />
+        <hr />
+        <NameForm />
       </div>
     );
   }
