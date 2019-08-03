@@ -22,7 +22,7 @@ class Banner extends Component {
     return (<div>
         <WarningBanner warning={this.state.showWarning} />
         <button onClick={this.handleToggleClick}>
-        {this.state.showWarning ? 'Hide' : 'Show'}
+        {this.state.showWarning ? 'Hide Banner' : 'Show Banner'}
         </button>
             </div> )
   }

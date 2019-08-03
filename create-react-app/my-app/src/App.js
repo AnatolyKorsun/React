@@ -213,7 +213,10 @@ import Clock from "./Time";
 import Posts from "./Posts";
 import ToggleButton from "./ToggleButton";
 import LoginControl from "./LoginControl";
-import Banner from "./Banner";
+import Banner from './Banner';
+import List from './List';
+
+
 
 class App extends Component {
   state = {
@@ -267,6 +270,7 @@ class App extends Component {
         <ToggleButton />
         <LoginControl />
         <Banner />
+        <List />
       </div>
     );
   }
