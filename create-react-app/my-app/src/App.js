@@ -213,12 +213,11 @@ import Clock from "./Time";
 import Posts from "./Posts";
 import ToggleButton from "./ToggleButton";
 import LoginControl from "./LoginControl";
-import Banner from './Banner';
-import List from './List';
-import NameForm from './NameForm'
-import MultipleInputs from './MultipleInputs'
-
-
+import Banner from "./Banner";
+import List from "./List";
+import NameForm from "./NameForm";
+import MultipleInputs from "./MultipleInputs";
+import Calculator from "./Calculator";
 
 class App extends Component {
   state = {
@@ -275,7 +274,10 @@ class App extends Component {
         <List />
         <hr />
         <NameForm />
+        <hr />
         <MultipleInputs />
+        <hr />
+        <Calculator />
       </div>
     );
   }
