@@ -216,6 +216,7 @@ import LoginControl from "./LoginControl";
 import Banner from './Banner';
 import List from './List';
 import NameForm from './NameForm'
+import MultipleInputs from './MultipleInputs'
 
 
 
@@ -274,6 +275,7 @@ class App extends Component {
         <List />
         <hr />
         <NameForm />
+        <MultipleInputs />
       </div>
     );
   }
