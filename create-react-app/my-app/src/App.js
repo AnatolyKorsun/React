@@ -218,6 +218,8 @@ import List from "./List";
 import NameForm from "./NameForm";
 import MultipleInputs from "./MultipleInputs";
 import Calculator from "./Calculator";
+import WelcomeDialog from "./FancyBorder";
+import SplitPane from "./SplitPane";
 
 class App extends Component {
   state = {
@@ -278,6 +280,8 @@ class App extends Component {
         <MultipleInputs />
         <hr />
         <Calculator />
+        <WelcomeDialog />
+        <SplitPane />
       </div>
     );
   }
