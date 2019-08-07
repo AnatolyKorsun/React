@@ -220,6 +220,8 @@ import MultipleInputs from "./MultipleInputs";
 import Calculator from "./Calculator";
 import WelcomeDialog from "./FancyBorder";
 import SplitPane from "./SplitPane";
+import Dialog from "./Dialog"
+import SingUpDialog from "./SingUpDialog";
 
 class App extends Component {
   state = {
@@ -266,12 +268,19 @@ class App extends Component {
         />
         <h3>Add New</h3>
         <Form handleSubmit={this.handleSubmit} />
+        <hr />
         <Api />
+        <hr />
         <Comment />
+        <hr />
         <Clock />
+        <hr />
         <Posts />
+        <hr />
         <ToggleButton />
+        <hr />
         <LoginControl />
+        <hr />
         <Banner />
         <List />
         <hr />
@@ -280,8 +289,11 @@ class App extends Component {
         <MultipleInputs />
         <hr />
         <Calculator />
+        <hr />
         <WelcomeDialog />
         <SplitPane />
+        <SingUpDialog />
+        <hr />
       </div>
     );
   }
