@@ -4,7 +4,7 @@ class Posts extends Component {
     super(props);
     this.state = {
       users: [],
-      posts: [],
+      posts: []
     };
   }
   componentDidMount() {
@@ -21,12 +21,10 @@ class Posts extends Component {
     fetch(url)
       .then(result => result.json())
       .then(result => this.setState({ posts: result }));
-  }
+  };
 
   render() {
     const { users, posts } = this.state;
-
-    console.log(this.state);
 
     const usersList = users.map((entry, index) => {
       return <li key={index}>{entry}</li>;
