@@ -22,10 +22,20 @@ class ProductRow extends Component {
 }
 
 class ProductTable extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     const row = [];
     let lastCategory = null;
+
     this.props.products.forEach(product => {
+      if(product.name.indexOf(this.props.searchText) === -1){
+        return;
+      };
+      if(product.stocked && this.props.inStockOnly){
+        return;
+      }
       if (product.category !== lastCategory) {
         row.push(<ProductCategoryRow category={product.category} />);
       }
@@ -113,7 +123,7 @@ class FilterableProduct extends Component {
           onInStockChange={this.handleInStackChange}
         />
         <ProductTable
-          products={products}
+          products={this.props.products}
           searchText={this.state.searchText}
           inStockOnly={this.state.inStockOnly}
         />
@@ -122,38 +132,38 @@ class FilterableProduct extends Component {
   }
 }
 
-const products = [
-  {
-    category: "Sporting Goods",
-    price: "$49.99",
-    stocked: true,
-    name: "Football"
-  },
-  {
-    category: "Sporting Goods",
-    price: "$9.99",
-    stocked: true,
-    name: "Baseball"
-  },
-  {
-    category: "Sporting Goods",
-    price: "$29.99",
-    stocked: false,
-    name: "Basketball"
-  },
-  {
-    category: "Electronics",
-    price: "$99.99",
-    stocked: true,
-    name: "iPod Touch"
-  },
-  {
-    category: "Electronics",
-    price: "$399.99",
-    stocked: false,
-    name: "iPhone 5"
-  },
-  { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" }
-];
+// const products = [
+//   {
+//     category: "Sporting Goods",
+//     price: "$49.99",
+//     stocked: true,
+//     name: "Football"
+//   },
+//   {
+//     category: "Sporting Goods",
+//     price: "$9.99",
+//     stocked: true,
+//     name: "Baseball"
+//   },
+//   {
+//     category: "Sporting Goods",
+//     price: "$29.99",
+//     stocked: false,
+//     name: "Basketball"
+//   },
+//   {
+//     category: "Electronics",
+//     price: "$99.99",
+//     stocked: true,
+//     name: "iPod Touch"
+//   },
+//   {
+//     category: "Electronics",
+//     price: "$399.99",
+//     stocked: false,
+//     name: "iPhone 5"
+//   },
+//   { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" }
+// ];
 
 export default FilterableProduct;

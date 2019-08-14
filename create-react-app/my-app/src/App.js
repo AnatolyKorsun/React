@@ -329,9 +329,9 @@ class App extends Component {
         <SplitPane />
         <SingUpDialog />
         <hr />
-        <FilterableProductTable products={PRODUCTS} />
+        <FilterableProductTable products = { PRODUCTS } />
         <hr />
-        <FilterableProduct />
+        <FilterableProduct products = { PRODUCTS } />
       </div>
     );
   }
